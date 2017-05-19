@@ -18,23 +18,6 @@ class Town_input_widget(tk.Frame):
             self.items[item].pack()
             print(self.items[item])
 
-    def getValues(self):
-        self.values = dict()
-        for entry in self.ENTRYSTRING.split():
-            self.values[entry] = self.entries[entry].get()
-        return self.values
-
-    def clearEntries(self):
-        for entry in self.ENTRYSTRING.split():
-            self.entries[entry].delete(0,tk.END)
-
-    def validateEntry(self):
-        for entry in self.entries:
-            value = entry.get()
-            # good idea
-            # ??LOGIC??
-
-
 
 
 if __name__ == '__main__':
